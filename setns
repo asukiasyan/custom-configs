@@ -1,0 +1,13 @@
+#!/bin/bash
+CONTEXT=$(kubectl config current-context)
+
+usage() {
+  echo -e "\nUsage: $0 <namespace>"
+}
+
+if [ -z $1 ]
+   then
+     usage
+   else
+     kubectl config set-context $CONTEXT --namespace=$1
+fi
