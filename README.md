@@ -1,1 +1,1 @@
-# custom-configs
+# dotfiles

@@ -1,5 +1,16 @@
-" Pathogen package manages is used with this vimrc file
-execute pathogen#infect()
+" VimPlug
+call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'neoclide/coc.nvim'
+Plug 'frazrepo/vim-rainbow'
+Plug 'neoclide/coc-yaml'
+Plug 'hashivim/vim-terraform'
+Plug 'anyakichi/vim-surround'
+Plug 'itchyny/lightline.vim'
+call plug#end()
+
 syntax on
 colorscheme gruvbox
 " show existing tab with 4 spaces width
@@ -22,8 +33,12 @@ set showmatch
 set splitright
 " show relativenumbers
 set relativenumber
+set number
 " indent when moving to the next line while writinf code
 set autoindent
+" decrease update time of vim for language server
+set updatetime=300
+
 " open NerdTree automatically when vim is opened
 " autocmd vimenter * NERDTree
 " <Ctrl-l> redraws the screen and removes any search highlighting.
