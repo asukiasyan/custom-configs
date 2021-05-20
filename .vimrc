@@ -7,7 +7,7 @@ Plug 'neoclide/coc.nvim'
 Plug 'frazrepo/vim-rainbow'
 Plug 'neoclide/coc-yaml'
 Plug 'hashivim/vim-terraform'
-Plug 'anyakichi/vim-surround'
+Plug 'tpop/vim-surround'
 call plug#end()
 
 syntax on
